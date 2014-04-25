@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Welcome to the CAPS app</h1>
+        <% if admin_signed_in? %>
+                <%= link_to "Upload", static_uploads_path, :class => "btn btn-lg btn-info" %>
+
+        <% else %>
+                <%= link_to "Login", new_admin_session_path, :class => "btn btn-lg btn-info" %>
+
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>

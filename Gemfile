@@ -24,6 +24,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', branch: 'bootstrap3'
+
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
