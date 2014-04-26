@@ -1,0 +1,2 @@
+module AndroidScriptsHelper
+end

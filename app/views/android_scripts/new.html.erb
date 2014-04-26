@@ -1,0 +1,15 @@
+<div class="container specborder">
+	<h1>New Script</h1>
+	<%= form_for @android_script, :html => { :class => 'form-search', :multipart => true } do |f| %>
+		<div class="form-group">
+			<label>Name</label>
+			<%=f.text_field :name, :class => 'form-control'%>
+		</div>
+		<div class="form-group">
+			<%= f.file_field :script %>
+		</div>
+		<div class="actions">
+			<%=f.submit "Add Android Script", :class => "btn btn-primary btn-sm"%>
+		</div>
+	<%end%>
+</div>

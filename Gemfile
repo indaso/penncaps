@@ -26,7 +26,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+gem 'fog', '~> 1.22.0'
 gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
@@ -55,3 +55,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+gem 'carrierwave'

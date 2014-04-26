@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+a {
+	text-decoration: none;
+}
+
+.specborder {
+	border-style: solid;
+	border-width: thin;
+	border-color: #ddd;
+	border-radius: 5px;
+	padding-bottom: 10px;
+}
+
+.help-text {
+	display: none;
+	position: absolute;
+}

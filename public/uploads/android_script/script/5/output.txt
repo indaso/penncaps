@@ -1,0 +1,14 @@
+1396816105270 (UserInterface): Starting application
+1396816109112 (UserInterface): User input: 1
+1396816109113 (UserInterface): User wants to search by year
+1396816111739 (Searcher): Looking in cache for key 1930
+1396816111740 (Searcher): cache miss for winners in 1930
+1396816111740 (Searcher): Searching for best picture winner in 1930
+1396816111740 (FileReader): Searching data file with year 1930 and category Best Picture
+1397036952445 (UserInterface): Starting application
+1397036957234 (UserInterface): User input: 1
+1397036957235 (UserInterface): User wants to search by year
+1397036962677 (Searcher): Looking in cache for key 1944
+1397036962678 (Searcher): cache miss for winners in 1944
+1397036962678 (Searcher): Searching for best picture winner in 1944
+1397036962678 (FileReader): Searching data file with year 1944 and category Best Picture

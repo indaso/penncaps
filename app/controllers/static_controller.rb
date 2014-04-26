@@ -5,5 +5,6 @@ class StaticController < ApplicationController
   def uploads
 
   	@admin = current_admin
+  	
   end
 end

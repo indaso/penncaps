@@ -1,0 +1,16 @@
+<div class="container">
+<!-- 	<div class="alert alert-success alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		File upload was successful!
+	</div> -->
+
+
+	<h1>Script List</h1>
+
+	<% @android_scripts.each do |as| %>
+	<p><%=as.name%></p>
+	<p><%= image_tag as.script_url %></p>
+	<p><%= as.script_url%> </p>
+	<br />
+	<%end%>
+</div>
