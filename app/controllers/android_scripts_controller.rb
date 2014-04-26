@@ -27,6 +27,12 @@ class AndroidScriptsController < ApplicationController
   	end
   end
 
+  def destroy
+    @android_script = AndroidScript.find(params[:id])
+    @android_script.destroy
+    redirect_to android_scripts_path
+  end
+
   def android_scripts_params
   	params.require(:android_script).permit(:name, :script)
   end

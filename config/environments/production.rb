@@ -79,12 +79,4 @@ Penncaps::Application.configure do
 
   config.assets.initialize_on_precompile = false
 
-  config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-    :bucket => ENV['capsscriptfiles'],
-    :access_key_id => ENV['AKIAIVTMAV3QSTNQQ5RA'],
-    :secret_access_key => ENV['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']
-  }
-}
 end
