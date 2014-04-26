@@ -1,6 +1,10 @@
 class AndroidScriptsController < ApplicationController
   def new
-  	@android_script = AndroidScript.new
+    if admin_signed_in?
+      @android_script = AndroidScript.new
+    else
+      redirect_to new_admin_session_path
+    end  
   end
 
   def show
@@ -8,7 +12,11 @@ class AndroidScriptsController < ApplicationController
   end
 
   def index
-  	@android_scripts = AndroidScript.all
+    if admin_signed_in?
+      @android_scripts = AndroidScript.all
+    else
+      redirect_to new_admin_session_path
+    end
   end
 
   def edit
