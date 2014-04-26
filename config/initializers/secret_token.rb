@@ -9,4 +9,5 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Penncaps::Application.config.secret_key_base = '7b471a590d22cbe1585e0b9516d1a8d2a2fe93ca550ec32d2f5d93529435925168fbb27be0902566ad2802a011288c5ffebd7f670076553da7cf4a5fb5af68ff'
+Penncaps::Application.config.secret_key_base = ENV['SECRET_KEY']
+
