@@ -30,6 +30,7 @@ gem 'fog', '~> 1.22.0'
 gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'hirb'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', branch: 'bootstrap3'
 
 

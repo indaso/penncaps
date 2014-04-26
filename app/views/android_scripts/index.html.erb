@@ -10,14 +10,17 @@
 
 		<table class="table table-hover">
 			<tr>
-				<td><b>File Name</b></td>
-				<td><b>File URL</b></td>
-				<td><b>Remove File</b></td>
+				<td><b>Script Name</b></td>
+				<td><b>Script URL</b></td>
+				<td><b>Edit Script</b></td>
+				<td><b>Delete Script</b></td>
 			</tr>
 			<% @android_scripts.each do |as| %>
 			<tr>
 				<td><%= as.name %></td>
 				<td><%= as.script_url%></td>
+				<td><%=link_to "Edit File", edit_android_script_path(as.id), :class => "btn btn-primary btn-sm" %></td>
+				<td><%=link_to "Delete File", as, confirm: "Are you sure you want to delete this File?", method: :delete, :class => "btn btn-primary btn-sm" %> </td>
 			</tr>
 			<%end%>
 		</table>

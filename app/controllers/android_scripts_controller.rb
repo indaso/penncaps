@@ -15,7 +15,15 @@ class AndroidScriptsController < ApplicationController
   	@android_script = AndroidScript.find(params[:id])
   end
 
-
+  def update
+    @android_script = AndroidScript.find(params[:id])
+    if @android_script.update_attributes(android_scripts_params)
+      redirect_to android_scripts_path(@android_script.id)
+    else
+      render 'edit'
+    end
+  end
+  
   def create
   	@android_script = AndroidScript.new(android_scripts_params)
   	if @android_script.save

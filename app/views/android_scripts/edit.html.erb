@@ -1,2 +1,11 @@
-<h1>AndroidScripts#edit</h1>
-<p>Find me in app/views/android_scripts/edit.html.erb</p>
+<div class="container specborder">
+	<h1>Edit File</h1>
+<%= form_for @android_script, :html => {:multipart => true} do |f| %>
+  <p>
+    <label>My Avatar</label>
+    <%= f.text_field :name %>
+    <%= f.file_field :script %>
+  </p>
+  <%= f.submit %>
+<% end %>
+</div>

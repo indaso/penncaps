@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:admin) << :script
+    devise_parameter_sanitizer.for(:android_script) << :script
   end
 end
