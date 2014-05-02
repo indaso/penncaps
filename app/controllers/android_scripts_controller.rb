@@ -26,8 +26,10 @@ class AndroidScriptsController < ApplicationController
   def update
     @android_script = AndroidScript.find(params[:id])
     if @android_script.update_attributes(android_scripts_params)
+      flash[:notice] = "File was uploaded!"
       redirect_to android_scripts_path(@android_script.id)
     else
+      flash[:alert] = "File was not uploaded!"
       render 'edit'
     end
   end
@@ -35,10 +37,10 @@ class AndroidScriptsController < ApplicationController
   def create
   	@android_script = AndroidScript.new(android_scripts_params)
   	if @android_script.save
-  		flash[:notice] = "File was uploaded!"
+  		#flash[:notice] = "File was uploaded!"
   		redirect_to android_scripts_path
   	else
-  		flash[:alert] = "File was not uploaded!"
+  		#flash[:alert] = "File was not uploaded!"
   		render 'new'
   	end
   end

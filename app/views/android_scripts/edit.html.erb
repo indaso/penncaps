@@ -1,12 +1,43 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Conversation specifics</h1>
+			<h3>Change the flow of the conversation. The application will read from a csv of the following format</h3>
+			<table class="table table-bordered table-hover">
+				<tr>
+					<th>Line number</th>
+					<th>Support Provider Text</th>
+					<th>Support Provider Button 1 Text</th>
+					<th>Support Provider Button 1 GoTo</th>
+					<th>Support Provider Button 2 Text </th>
+					<th>Support Provider Button 2 GoTo</th>
+					<th>Support Recipient Text</th>
+					<th>Support Recipient Button 1 Text</th>
+					<th>Support Recipient Button 1 GoTo</th>
+					<th>Support Recipient Button 2 Text</th>
+					<th>Support Recipient Button 2 GoTo</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+
 <div class="container specborder">
-	<h1>Edit Script</h1>
-<%= form_for @android_script, :html => {:multipart => true} do |f| %>
-  <p>
-    <%= f.label :name, 'Script Name' %>
-    <%= f.text_field :name, :class => 'form-control' %>
-    <br />
-    <%= f.file_field :script %>
-  </p>
-  <%= f.submit 'Update File Name' , :class => "btn btn-primary btn-sm" %>
-<% end %>
+	<h2>Upload File</h2>
+	<%= form_for @android_script, :html => {:multipart => true} do |f| %>
+	<p>
+		<% if @android_script.id == 1 %>
+		<p><b>File name must be named script.csv</b></p>
+		<% else %>
+		<p><b>File name must be named email.txt</b></p>
+		<%end%>
+		<%= f.hidden_field :name%>
+		<br />
+		<%= f.file_field :script %>
+	</p>
+	<%= f.submit 'Upload' , :class => "btn btn-primary btn-sm" %>
+	<% end %>
 </div>
