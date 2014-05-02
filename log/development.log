@@ -29362,3 +29362,315 @@ Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2014-05-02 02:28:25 -040
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 02:28:25 -0400
   [1m[35mAndroidScript Load (0.2ms)[0m  SELECT "android_scripts".* FROM "android_scripts"
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-02 02:53:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (7.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticController#index as HTML
+  [1m[35mAdmin Load (12.5ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 ORDER BY "admins"."id" ASC LIMIT 1
+  Rendered static/index.html.erb within layouts/application (56.9ms)
+Completed 200 OK in 682ms (Views: 625.6ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/android_scripts.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/android_scripts.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:45 -0400
+
+
+Started DELETE "/admins/sign_out" for 127.0.0.1 at 2014-05-02 02:53:47 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+8vJmTAguYjGBPI5fMuVhLbNBpTLCx6rLWKNJbjwjdU="}
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 ORDER BY "admins"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (92.1ms)[0m  [1mUPDATE "admins" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admins"."id" = 1[0m  [["remember_created_at", nil], ["updated_at", Fri, 02 May 2014 06:53:48 UTC +00:00]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 219ms (ActiveRecord: 94.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/android_scripts.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/android_scripts.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:48 -0400
+
+
+Started GET "/admins/sign_in" for 127.0.0.1 at 2014-05-02 02:53:49 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (45.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (193.3ms)
+Completed 200 OK in 265ms (Views: 223.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for 127.0.0.1 at 2014-05-02 02:53:54 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqGXpdrdedwi7DeiIeZZw7ayJKIFnJE9TN7ORHFZrL8=", "admin"=>{"email"=>"indaso5@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Sign in"}
+  [1m[36mAdmin Load (22.0ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."email" = 'indaso5@gmail.com' ORDER BY "admins"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "admins" SET "remember_created_at" = ?, "updated_at" = ? WHERE "admins"."id" = 1[0m  [["remember_created_at", Fri, 02 May 2014 06:53:55 UTC +00:00], ["updated_at", Fri, 02 May 2014 06:53:55 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "admins" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admins"."id" = 1  [["last_sign_in_at", Fri, 02 May 2014 06:28:25 UTC +00:00], ["current_sign_in_at", Fri, 02 May 2014 06:53:55 UTC +00:00], ["sign_in_count", 8], ["updated_at", Fri, 02 May 2014 06:53:55 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 221ms (ActiveRecord: 25.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+Processing by StaticController#index as HTML
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 ORDER BY "admins"."id" ASC LIMIT 1
+  Rendered static/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/android_scripts.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/android_scripts.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/static.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 02:53:55 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-02 02:53:58 -0400
+Processing by StaticController#index as HTML
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT "admins".* FROM "admins" WHERE "admins"."id" = 1 ORDER BY "admins"."id" ASC LIMIT 1[0m
+  Rendered static/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms)
